@@ -1,0 +1,153 @@
+#body-row {
+    margin-left:0;
+    margin-right:0;
+}
+#sidebar-container {
+    min-height: 100vh;   
+    background-color: #333;
+    padding: 0;
+}
+
+
+.sidebar-expanded {
+    width: 230px;
+}
+.sidebar-collapsed {
+    width: 60px;
+}
+
+
+#sidebar-container .list-group a {
+    height: 50px;
+    color: white;
+}
+
+
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+
+.sidebar-separator-title {
+    background-color: #333;
+    height: 35px;
+}
+.sidebar-separator {
+    background-color: #333;
+    height: 25px;
+}
+.logo-separator {
+    background-color: #333;    
+    height: 60px;
+}
+
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+/*.background-popup { 
+  display: none;  
+  background-color: #000000; 
+  opacity: 0.7; 
+  position: absolute; top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0; 
+  z-index: 99; 
+}
+
+.content-popup { 
+  font-family: Verdana; 
+  display: none; background-color: #FFFFFF; 
+  position: absolute; top: 10%; 
+  right: 15%; 
+  bottom: 10%; 
+  left: 15%; 
+  z-index: 999; 
+  border: 7px solid #BBBBBB; 
+}
+
+.content-popup .popup-heading { 
+  background-color: #BBBBBB; 
+  padding: 7px 0; 
+}
+
+.content-popup .popup-heading h4 { 
+  margin: 7px 5px; 
+}
+
+.content-popup .popup-heading h4 span { 
+  position: absolute; right: 7px; 
+  cursor: pointer; 
+}
+
+.content-popup .popup-heading h4 span:hover { 
+  color: #FFFFFF; 
+}
+
+.content-popup .popup-body { 
+  padding: 5px; 
+}
+
+.popup-loading { 
+  display: none; font-family: Verdana; 
+  max-width: 150px; 
+  position: absolute; top: 45%; 
+  left: 45%; 
+  background-color: #000000; 
+  color: #FFFFFF; 
+  padding: 10px; 
+  z-index: 998; 
+}*/
+
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+  }
+  div.popup{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,.8);
+  }
+  
+  div#box{
+    margin:5% auto;
+    background:#fff;
+    width:50%;
+    height:50%;
+    -webkit-box-shadow:0 0 15px #000;
+    -moz-box-shadow:0 0 15px #000;
+    box-shadow:0 0 15px #000;
+  }
+  
+  a.close{
+    text-decoration:none;
+    color:#000;
+    margin:10px 15px 0 0;
+    float:right;
+    font-family:tahoma;
+    font-size:20px;
+  }
